@@ -1,0 +1,70 @@
+body {
+    background-color: pink;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url(arrowheart.cur), auto;
+}
+
+.container {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: beat 0.6s infinite;
+}
+
+
+.heart1 {
+    background-color: red;
+    width: 300px;
+    height: 270px;
+    position: relative;
+    transform: rotate(-45deg);
+}
+
+.heart2 , .heart3 {
+    width: 300px;
+    height: 270px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart2 {
+ position: absolute;
+ margin-bottom: 152.5px;
+ margin-left: 136px;
+}
+
+.heart3 {
+  position: absolute;
+  margin-bottom: 150px;
+  margin-right: 170px;
+}
+
+.click {
+    position: absolute;
+    margin-bottom: -550px;
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@keyframes beat {
+  0%, 100% { transform: scale(1) rotate(); }
+  50%      { transform: scale(1.1); }
+}
+
+.love {
+    height:500px;
+    margin-bottom: 400px
+}
+
+.clicked {
+    position: absolute;
+    margin-top: 300px;
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
